@@ -27,7 +27,7 @@
             </div>
             <div class="form-goup">
               <label for="initial-deposit">Initial Deposit Amount</label>
-              <input id="initial-deposit" class="form-control" type="number" required placeholder="$0.00">
+              <input id="initial-deposit" min="0" step="0.01" class="form-control" type="number" required placeholder="$0.00">
             </div>
             <button type="submit" class="btn btn-primary">Create Account</button>
           </form>
@@ -45,11 +45,11 @@
             </div>
             <div class="form-goup">
               <label for="deposit">Deposit Amount</label>
-              <input id="deposit" class="form-control" type="number" required placeholder="$0.00">
+              <input id="deposit" class="form-control" type="number" min="0" step="0.01" required placeholder="$0.00">
             </div>
             <div class="form-goup">
               <label for="withdrawal">Withdrawal Amount</label>
-              <input id="withdrawal" class="form-control" type="number" required placeholder="$0.00">
+              <input id="withdrawal" class="form-control" type="number" min="0" step="0.01" required placeholder="$0.00">
             </div>
             <button type="submit" class="btn btn-primary">Complete Transaction</button>
           </form>
