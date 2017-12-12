@@ -63,10 +63,12 @@ $(document).ready(function() {
       if((name === accounts[i].name) && (password === accounts[i].password)) {
         accounts[i].deposit(deposit);
         accounts[i].withdraw(withdrawal);
-        var updateBalance = eval("'#account" + i + "'");
+        var updateBalance = eval("'#account" + i + "'"); //'#account4'
         $(updateBalance).text(accounts[i].balance);
-      } else {
+      } else if((name === accounts[i].name) && (password !== accounts[i].password)) {
         alert("Wrong usename/password combination");
+      } else {
+        console.log("asdfasdf")
       }
     }
     resetFields();

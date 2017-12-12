@@ -1,0 +1,14 @@
+.jumbotron {
+  background-color: white;
+  background-image: url(../bank.gif);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+body {
+  background-color: #d6e5ff;
+}
+
+.jumbotron p {
+  font-style: italic;
+}
