@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Give us Your Money</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to the Bank of the Internet</h1>
+        <p>Where all the math is real but the money is fake</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <form id="register">
+            <h3>Create a new account<h3>
+            <div class="form-group">
+              <label for="register-name">Enter Your Name</label>
+              <input id="register-name" class="form-control" type="text" required placeholder="user name">
+            </div>
+            <div class="form-goup">
+              <label for="register-passWord">Enter Your Password</label>
+              <input id="register-passWord" class="form-control" type="password" required placeholder="password">
+            </div>
+            <div class="form-goup">
+              <label for="initial-deposit">Initial Deposit Amount</label>
+              <input id="initial-deposit" class="form-control" type="number" required placeholder="$0.00">
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <form id="alter">
+            <h3>Deposit and Withdraw from your Account</h3>
+            <div class="form-group">
+              <label for="alter-name">Enter Your Name</label>
+              <input id="alter-name" class="form-control" type="text" required placeholder="user name">
+            </div>
+            <div class="form-goup">
+              <label for="alter-passWord">Enter Your Password</label>
+              <input id="alter-passWord" class="form-control" type="password" required placeholder="password">
+            </div>
+            <div class="form-goup">
+              <label for="deposit">Deposit Amount</label>
+              <input id="deposit" class="form-control" type="number" required placeholder="$0.00">
+            </div>
+            <div class="form-goup">
+              <label for="withdrawal">Withdrawal Amount</label>
+              <input id="withdrawal" class="form-control" type="number" required placeholder="$0.00">
+            </div>
+            <button type="submit" class="btn btn-primary">Complete Transaction</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" id="current-balance">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
