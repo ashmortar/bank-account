@@ -6,9 +6,17 @@
 }
 
 body {
-  background-color: #d6e5ff;
+  background-color: #ededed;
 }
 
 .jumbotron p {
   font-style: italic;
+}
+
+.well {
+  background-color: white;
+}
+
+button {
+  background-color: #565884!important;
 }
